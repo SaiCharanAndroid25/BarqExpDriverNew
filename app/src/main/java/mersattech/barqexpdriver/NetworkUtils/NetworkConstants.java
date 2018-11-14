@@ -4,6 +4,8 @@ public class NetworkConstants {
 
   //  public static final String BASE_URL = "http://devapi.barqexp.com/";
     // public static final String BASE_URL = "http://mobile.barqexp.com/";
+
+  //  new driver base url
     public static final String BASE_URL = "https://testdriverapiv1.barqexp.com/";
 
 
