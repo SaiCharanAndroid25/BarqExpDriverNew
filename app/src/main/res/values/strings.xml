@@ -1,0 +1,385 @@
+<resources>
+    <string name="app_name">BarqExp Driver New</string>
+    <string name="welcome">Welcome!</string>
+    <string name="sign_up">My Profile</string>
+    <string name="email_hint_tv">Email</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Mobile Number</string>
+    <string name="create_password">Create Password</string>
+    <string name="city">City</string>
+    <string name="invite_code_optional">Invite Code (Optional)</string>
+    <string name="next">Next</string>
+    <string name="cancel_icon">cancel icon</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="user_id">User Id</string>
+    <string name="password">Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="login">Login</string>
+    <string name="register">Sign up</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="confirm">Confirm</string>
+    <string name="disagree">Disagree</string>
+    <string name="agree">Agree</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_one_time_password_otp">Enter One Time Password(OTP)</string>
+    <string name="otp">OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="otp_text">One time Password(OTP) has been sent to your mobile **********, please enter it here to verify your mobile.</string>
+    <string name="address_details">Address Details</string>
+    <string name="country">Country</string>
+    <string name="block">Block</string>
+    <string name="street">Street</string>
+    <string name="building_number">Building Number</string>
+    <string name="continue_text">Continue</string>
+    <string name="dob">DOB</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="please_select_language">Please Select Language</string>
+    <string name="add_your_photograph">Your photograph</string>
+    <string name="national_id_number">National Id Number</string>
+    <string name="national_id_expiry">National Id Expiry</string>
+    <string name="upload_national_id_scan_copy_here">National Id scan copy</string>
+    <string name="vehicle_type">Vehicle Type :</string>
+    <string name="vehicle_manufacturer">Vehicle Manufacturer :</string>
+    <string name="vehicle_model">Vehicle Model :</string>
+    <string name="year_of_maufacture">Year of maufacture</string>
+    <string name="plate_number">Plate Number</string>
+    <string name="vehicle_license_number">Vehicle License Number</string>
+    <string name="vehicle_license_expiry_date">Vehicle license expiry date</string>
+    <string name="upload_vehicle_license_here">Upload vehicle license here</string>
+    <string name="driver_docs_details">Driver Documents</string>
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="upload_vehicle_insurence_scanned_copy">Upload Vehicle Insurance Scanned Copy</string>
+    <string name="upload_driving_license_scanned_copy_here">Upload driving license scanned copy here</string>
+
+    <string name="lbl_empty_old_pwd_field">Old Password field can\'t be empty</string>
+    <string name="lbl_empty_new_pwd_field">New Password field can\'t be empty</string>
+    <string name="lbl_empty_conf_pwd_field">Confirm Password field can\'t be empty</string>
+
+    <string name="lbl_empty_phone_field">Phone field can\'t be empty</string>
+    <string name="lbl_phone_digit_er">Please enter 10 digits phone number.</string>
+    <string name="lbl_empty_pass_er">Password field can\'t be empty</string>
+    <string name="lbl_enter_country">Please enter country</string>
+    <string name="lbl_enter_city">Please enter city</string>
+    <string name="lbl_enter_block">Please enter block</string>
+    <string name="lbl_enter_street">Please enter street</string>
+    <string name="lbl_enter_building_num">Please enter building number</string>
+    <string name="lbl_enter_emal">Please enter email</string>
+    <string name="lbl_invalid_email">Please enter valid email address</string>
+    <string name="lbl_national_id_exp">Please enter national Id expiry date</string>
+    <string name="lbl_nation_id_num">Please enter 10 digit national Id number</string>
+    <string name="et_hint_vehicle_insurance_number">Vehicle Insurance Number</string>
+    <string name="et_hint_vehicle_insurance_expiry_date">Vehicle insurance expiry date</string>
+    <string name="et_hint_driving_license_number">Driving License number</string>
+    <string name="et_hint_driving_license_exp_date">Driving license expiry date</string>
+    <string name="lbl_vehicle_ins_num">Please enter vehicle insurance number</string>
+    <string name="lbl_vehicle_ins_exp_date">Please enter vehicle insurance expiry date</string>
+    <string name="lbl_driving_license_num">Please enter driving license number</string>
+    <string name="lbl_driving_license_exp_date">Please enter driving license expiry date</string>
+    <string name="lbl_enter_bank_name">Please enter bank name</string>
+    <string name="lbl_enter_branch_name">Please enter branch name</string>
+    <string name="lbl_enter_ibn">Please enter IBN</string>
+    <string name="lbl_enter_desg">Please enter designation</string>
+    <string name="lbl_enter_first_name">Please enter first name</string>
+    <string name="lbl_enter_last_name">Please enter last name</string>
+    <string name="verify">Verify</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="iban">IBAN</string>
+    <string name="mr_mrs_miss">Mr/Mrs/Miss</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="enable_cod">Enable COD</string>
+    <string name="ins_driving_screen">Insurance and Driving license screen</string>
+    <string name="bank_details_screen">Bank details screen</string>
+    <string name="photoSelection">Add Photo</string>
+    <string name="driverName">Ravichandran</string>
+    <string name="driverLiveLocation">""</string>
+    <string name="statusOnline">Online</string>
+    <string name="statusOffline">Offline</string>
+    <string name="offlinemessage">Come Online to Proceed with the services</string>
+    <string name="listofpickupitems">List of Items</string>
+    <string name="cancelButton">Cancel Trip</string>
+    <string name="arrivedButton">Location Arrived</string>
+    <string name="productdesc">Product Description</string>
+    <string name="driverOnline">\@driverStatus</string>
+    <string name="txt_cod_range">COD Range</string>
+    <string name="second_name">Second name</string>
+    <string name="third_name">Third name</string>
+    <string name="lbl_enter_dob">Please enter date of birth</string>
+    <string name="upload_scannedimageandQR">Update Item</string>
+    <string name="scan_qr_code">Scan Product QR Code</string>
+    <string name="Upload_prod_img">Capture Photos</string>
+    <string name="prod_further_details">Product Verification Check</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scannedcode">Scanned Code: </string>
+    <string name="hijri">Hijri</string>
+    <string name="gregorian">Gregorian</string>
+
+    <string-array name="profile_screens">
+        <item name="my_details">My Details</item>
+        <item name="address_details">Address Details</item>
+        <item name="driver_details">Driver Identity Documnets</item>
+        <item name="vehicle_details">Vehicle Details</item>
+        <item name="ins_lincs_details">Insurance and License Details</item>
+        <item name="bank_details">Bank Details</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="profile_info">Profile Information</string>
+    <string name="current_order">Current Order</string>
+    <string name="number_of_trips">Number of trips : %d</string>
+    <string name="number_of_orders">Number of orders : %d</string>
+    <string name="deposit_amount">Deposit amount : %d</string>
+    <string name="credited_amount">Credited amount : %d</string>
+    <string name="need_location_permissions_to_continue">Need location permissions to continue. Retry or grant location permissions from device settings.</string>
+    <string name="save">Save</string>
+
+    <string-array name="navigation_menu_items">
+        <item name="orders">Current Order</item>
+        <item name="my_profile_detail">My Profile</item>
+        <item name="history_detail">Order History</item>
+        <item name="reset_password">Reset Password</item>
+       <!-- <item name="company_account_detail">Company Account Details</item>
+        <item name="view_payments">View Payments</item>
+        <item name="call_operator">Call Operator</item>-->
+        <item name="preferences">Preference</item>
+       <!-- <item name="request_callback">Request Callback</item>-->
+        <item name="logout">Logout</item>
+    </string-array>
+    <string-array name="preference_type">
+        <item name="preference_type1">Select</item>
+        <item name="preference_type2">Local</item>
+        <item name="preference_type3">Domestic</item>
+    </string-array>
+
+    <array name="drawables_list">
+        <item name="my_details_img">@drawable/my_details</item>
+        <item name="address_details_img">@drawable/address_details</item>
+        <item name="driver_details_img">@drawable/driver_details</item>
+        <item name="vehicle_details_img">@drawable/vehicle_details</item>
+        <item name="ins_lincs_details">@drawable/insurance_license_details</item>
+        <item name="bank_details_img">@drawable/bank_details</item>
+    </array>
+
+    <array name="nav_drawables_list">
+        <item name="my_profile_img">@drawable/myprofile</item>
+        <item name="history">@drawable/histroy</item>
+        <item name="history">@drawable/company_account</item>
+        <item name="history">@drawable/view_payment</item>
+        <item name="history">@drawable/call_operator</item>
+        <item name="tutorials">@drawable/settings</item>
+        <item name="settings">@drawable/tutorials</item>
+        <item name="help">@drawable/help</item>
+        <item name="logout">@drawable/logout</item>
+    </array>
+
+    <string name="startDelivery">Start Delivery</string>
+    <string name="startNavigation">Start Navigation</string>
+    <string name="recenter_map">Recenter map</string>
+    <string name="call_customer">Call Customer</string>
+    <string name="startDeliveryProcess">Start Delivery</string>
+    <string name="enter_delivery_otp">Enter Customer Delivery OTP</string>
+    <string name="notDelivered">Cancel Delivery</string>
+
+    <string name="need_gps">Need GPS enabled for location services</string>
+    <string name="api_failure_message">Something went wrong, please try again</string>
+    <string name="no_network_message">No network.Please check your internet connection.</string>
+    <string name="destination_arriving">DESTINATION ARRIVING</string>
+    <string name="id_1001">ID: 1001</string>
+    <string name="please_inform_destination">Please inform destination</string>
+    <string name="arriving">Arriving</string>
+    <string name="back">Back</string>
+
+    <string-array name="years">
+        <item>Year of manufacture</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+    </string-array>
+
+    <string name="customer_otp_text">One time Password has been sent to customer mobile, Please enter it below</string>
+
+    <string name="route">Route :</string>
+    <string name="delivery_status">Delivery Status:</string>
+    <string name="history">History</string>
+    <string name="power">Back</string>
+    <string name="_25_sec">%d sec</string>
+    <string name="alternate_phone">Alternate phone number</string>
+    <string name="help_text_count">%d/256</string>
+    <string name="select_country">Please select country</string>
+    <string name="select_city">Please select city</string>
+    <string name="select_block">Please select block</string>
+    <string name="upload_nation_id_scan">Please upload national id scan copy</string>
+    <string name="upload_profile_pic">Please upload profile pic</string>
+    <string name="upload_driver_license_scan">Please upload driver license scan copy</string>
+    <string name="upload_ins_scan">Please upload vehicle insurance scan copy</string>
+    <string name="enter_otp">Please enter otp</string>
+    <string name="enter_valid_password">Please enter valid password</string>
+    <string name="re_enter_password">Please re-enter the password</string>
+    <string name="pass_mismatch">Password mismatch</string>
+    <string name="enter_first_name">Please enter your first name</string>
+    <string name="enter_last_name">Please enter your last name</string>
+    <string name="startTrip">Continue Trip</string>
+    <string name="call_sender">Call Sender</string>
+    <string name="call_receiver">Call Receiver</string>
+    <string name="order_distance">%.2f km</string>
+    <string name="order_duration">%.2f min</string>
+    <string name="cod_amount">%.2f SAR</string>
+    <string name="history_order_id">Order ID : %d</string>
+    <string name="scan_code">SCAN</string>
+    <string name="product_details">Product Details</string>
+    <string name="history_dr_id">Delivery Request ID : %d</string>
+    <string name="search_hint">Search by order id or status</string>
+    <string name="search_bank_name">Search by bank name...</string>
+    <string name="pickup_uploaded_photos">PickUp Photos</string>
+    <string name="cod_val">%d SAR</string>
+
+    <!-- TODO: Payments -->
+    <string name="total_fee_earned">Total Driver Fee Earned</string>
+    <string name="amount_earned">Amount Earned</string>
+    <string name="credited">Credited</string>
+    <string name="pending">Pending</string>
+    <string name="driver_fee">Driver Fee</string>
+    <string name="cod_commission">COD Commission</string>
+    <string name="driver_cod_amount">COD Amount</string>
+    <string name="payments_amount">2500 SAR</string>
+    <string name="payments">Payments</string>
+    <string name="done">Done</string>
+    <string name="already_paid">Already paid?</string>
+    <string name="amount">Amount</string>
+    <string name="payment_reference_number">Payment reference number</string>
+    <string name="shipment_fee_val_text">%.2f SAR</string>
+    <string name="shipment_fee_earned">Shipment Fee Earned</string>
+    <string name="cod_comission_earned">COD Comission Earned</string>
+    <string name="cod_comission_val_text">%.2f SAR</string>
+    <string name="total">TOTAL</string>
+    <string name="total_text">%.2f SAR</string>
+    <string name="cod_collection_value">COD Collection Value</string>
+    <string name="cod_collection_val_text">%.2f SAR</string>
+    <string name="cod_deposited">COD Deposited</string>
+    <string name="cod_deposit_val_text">%.2f SAR</string>
+    <string name="cod_due">COD DUE</string>
+    <string name="cod_due_val_text">%.2f SAR</string>
+    <string name="total_earning">TOTAL EARNING</string>
+    <string name="total_earnings">%.2f SAR</string>
+    <string name="note">NOTE:</string>
+    <string name="note_message">An amount of %.2f SAR is due to us.Please deposit this in %s(%s)</string>
+    <string name="capture_payment_details">Capture payment details</string>
+    <string name="enter_payment_details">Enter payment details</string>
+    <!--<string name="details_btwn">Details Between</string>-->
+    <!--<string name="start_date">Start Date</string>-->
+    <!--<string name="end_date">End Date</string>-->
+    <string name="date_format">DD/MM/YYYY</string>
+    <string name="upload">Upload</string>
+    <string name="update">Update</string>
+    <string name="bank_accnt_tootlbar_title">Company Account Details</string>
+    <string name="no_data_hint_text">No data to show</string>
+    <string name="history_title_text">Order history</string>
+    <string name="current_order_title_text">Current Order</string>
+    <string name="reset_title_text">Reset Password</string>
+    <string name="coming_soon_hint_text">Coming soon</string>
+    <string name="no_history_hint_text">No History Found</string>
+    <string name="image_loading_fail_msg">Image loading failed</string>
+    <string name="age_error_msg">Age should be greater than 18 years</string>
+    <string name="help_hint_text">Request Callback</string>
+    <string name="enter_new_password">Enter new Password</string>
+    <string name="reset">Reset</string>
+    <string name="remarks">Remarks:</string>
+    <string name="sender_address">Sender Address:</string>
+    <string name="sender_ph_no">Sender Ph.No:</string>
+    <string name="sender_name">Sender Name:</string>
+    <string name="cod_title">Collect Payments</string>
+    <string name="total_amount">COD amount due</string>
+    <string name="received_amount_sar">Received Amount</string>
+    <string name="received_amt_hint_text">0</string>
+    <string name="amount_to_return">Amount to return</string>
+    <string name="amount_to_return_val">%d SAR</string>
+    <string name="driver_shares">Driver Shares</string>
+    <string name="driver_shares_val">%d SAR</string>
+    <string name="generate_otp">Generate Otp</string>
+    <string name="received_amt_error_text">Recieved amount should be greater than actual price</string>
+    <string name="received_amt_empty_error">Please enter the received amount</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="verify_otp">Verify</string>
+    <string name="number_of_trips_title">Number of trips</string>
+    <string name="number_of_trips_val">15</string>
+    <string name="deposit_amount_title">Deposit amount</string>
+    <string name="deposit_amount_val">250</string>
+    <string name="credited_amount_title">Credited amount</string>
+    <string name="credited_amount_val">200</string>
+    <string name="submit">Submit</string>
+    <string name="status">Status</string>
+    <string name="delivered">Delivered</string>
+    <string name="company_name">Company name</string>
+    <string name="mersat">Mersat</string>
+    <string name="date">Date</string>
+    <string name="delivery_requests">Delivery Requests</string>
+    <string name="distance_travelled">Distance travelled</string>
+    <string name="time_taken">Time taken</string>
+    <string name="do_you_want_to_logout">Do you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="are_you_willing_to_pickup_the_order">Are you willing to pickup the order?</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="camera">Camera</string>
+    <string name="photo_library">Photo Library</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="no_response">No response</string>
+    <string name="please_select_reason">Please select a reason to go offline</string>
+    <string name="order_completed">Order Delivered</string>
+    <string name="order_completed_long">Order has been Successfully delivered</string>
+    <string name="app_logo">app logo</string>
+    <string name="settings_title">Preferences</string>
+    <string name="tutorial_title">Tutorial</string>
+    <string name="ordercanceled">Order Canceled</string>
+    <string name="ordercanceled_long">Order has been cancelled</string>
+    <string name="pickup_arrived">Pickup Arrived</string>
+    <string name="type">Type</string>
+    <string name="from_trip">From City</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="time">Availability</string>
+    <string name="trip">Route</string>
+    <string name="to_trip">To City</string>
+    <string name="language">Language</string>
+    <string name="dr_cancelled">Order Refreshed</string>
+    <string name="dr_cancelled_text">Some of the delivery request got cancelled</string>
+    <!--<string name="driver_fee">Driver Fee</string>-->
+    <!--<string name="credited">Credited</string>-->
+    <!--<string name="pending">Pending</string>-->
+    <!--<string name="calendar">Calendar</string>-->
+    <!--<string name="vice_versa">Vice Versa</string>-->
+    <!--<string name="driver_fees">2500 SAR</string>-->
+    <!--<string name="pay_cod_amount">COD Amount</string>-->
+    <!--<string name="pay_cod_comms">COD Commission</string>-->
+    <!--<string name="pay_deposited">Deposited</string>-->
+    <!--<string name="amount_credited">Amount Credited</string>-->
+    <!--<string name="amount_deposited">Amount Deposited</string>-->
+
+    <!--<string name="driver_Fee">DRIVER FEE</string>-->
+    <!--<string name="driver_COD">COD</string>-->
+    <!--<string name="payments">Payments</string>-->
+
+    <string name="rec_not_aval">Reciever not available</string>
+    <string name="rej_by_rec">Rejected by Reciever</string>
+    <string name="please_select_reason_for_cancel_deliver">Please select a reason for cancel delivery</string>
+
+</resources>

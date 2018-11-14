@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/text_hint_color" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <LinearLayout
+                    android:id="@+id/order_num_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/order_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Order ID"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/order_id_val_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/app_button_color"
+                        android:text="15240"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_num_layout"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/date_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/date"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/date_val_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/app_button_color"
+                        android:text="03-10-2017"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dr_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date_layout"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/dr_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/delivery_requests"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dr_val_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/app_button_color"
+                        android:text="2"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/status_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dr_layout"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/ststua_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/status"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/status_val_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:text="Pending"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/distance_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/status_layout"
+                    android:visibility="gone"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/distance_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/distance_travelled"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/distance_val_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="0 km"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/time_layout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/distance_layout"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/time_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/time_taken"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/time_val_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="0 min"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cod_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time_layout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/cod_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cod_title"
+                        android:textAllCaps="true"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cod_val_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/cod_amount"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="120dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/tab_1_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55dp"
+
+                        android:background="@drawable/tab1"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:maxLines="2"
+                        android:textSize="12sp"
+                        android:text="DR ID: 15240                 Status: Pickup Pending" />
+
+                    <!--  <LinearLayout
+                          android:id="@+id/button_1"
+                          android:layout_width="match_parent"
+                          android:layout_height="55dp"
+                          android:background="@drawable/tab1"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginEnd="2dp"
+                          android:layout_marginLeft="2dp"
+                          android:layout_marginRight="2dp"
+                          android:layout_marginStart="2dp"
+                          android:layout_gravity="center"
+                          android:gravity="center"
+                          android:orientation="vertical">
+
+
+                          <TextView
+                              android:id="@+id/orderid_1"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center"
+                              android:gravity="center"
+                              android:text="Order ID: 15240"
+                              android:textSize="12sp"
+                              android:textColor="@color/black"
+                              android:textStyle="bold" />
+
+                          <TextView
+                              android:id="@+id/orderstatus_1"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center"
+                              android:gravity="center"
+                              android:textSize="12sp"
+                              android:text="Order Status: Pickup Pending"
+                              android:textColor="@color/black"
+                              android:textStyle="bold" />
+
+                      </LinearLayout>-->
+
+
+                    <Button
+                        android:id="@+id/tab_2_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55dp"
+
+                        android:background="@drawable/tab3"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:maxLines="2"
+                        android:textSize="12sp"
+                        android:text="DR ID: 15241                    Status: PickedUp" />
+
+                    <!--   <LinearLayout
+                           android:id="@+id/button_2"
+                           android:layout_width="match_parent"
+                           android:layout_height="55dp"
+                           android:background="@drawable/tab3"
+                           android:layout_marginTop="5dp"
+                           android:layout_marginEnd="2dp"
+                           android:layout_marginLeft="2dp"
+                           android:layout_marginRight="2dp"
+                           android:layout_marginStart="2dp"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+
+                           <TextView
+                               android:id="@+id/orderid_2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:gravity="center"
+                               android:text="Order ID: 15241"
+                               android:textSize="12sp"
+                               android:textColor="@color/black"
+                               android:textStyle="bold" />
+
+                           <TextView
+                               android:id="@+id/orderstatus_2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:gravity="center"
+                               android:textSize="12sp"
+                               android:text="Order Status: PickedUp"
+                               android:textColor="@color/black"
+                               android:textStyle="bold" />
+
+                       </LinearLayout>-->
+
+                    <!--   <LinearLayout
+                           android:id="@+id/button_3"
+                           android:layout_width="match_parent"
+                           android:layout_height="55dp"
+                           android:background="@drawable/tab2"
+                           android:layout_marginTop="5dp"
+                           android:layout_marginEnd="2dp"
+                           android:layout_marginLeft="2dp"
+                           android:layout_marginRight="2dp"
+                           android:layout_marginStart="2dp"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+
+                           <TextView
+                               android:id="@+id/orderid_3"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:gravity="center"
+                               android:text="Order ID: 15242"
+                               android:textColor="@color/black"
+                               android:textSize="12sp"
+                               android:textStyle="bold" />
+
+                           <TextView
+                               android:id="@+id/orderstatus_3"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:gravity="center"
+                               android:textSize="12sp"
+                               android:text="Order Status: Delivered"
+                               android:textColor="@color/black"
+                               android:textStyle="bold" />
+
+                       </LinearLayout>-->
+                    <Button
+                        android:id="@+id/tab_3_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55dp"
+
+                        android:background="@drawable/tab2"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:maxLines="2"
+                        android:textSize="12sp"
+                        android:text="DR ID: 15243                    Status: Delivered"  />
+
+                    <!--   <LinearLayout
+                           android:id="@+id/button_4"
+                           android:layout_width="match_parent"
+                           android:layout_height="55dp"
+                           android:background="@drawable/tab4"
+                           android:layout_marginTop="5dp"
+                           android:layout_marginEnd="2dp"
+                           android:layout_marginLeft="2dp"
+                           android:layout_marginRight="2dp"
+                           android:layout_marginStart="2dp"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+
+                           <TextView
+                               android:id="@+id/orderid_4"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:gravity="center"
+                               android:text="Order ID: 15243"
+                               android:textColor="@color/black"
+                               android:textSize="12sp"
+                               android:textStyle="bold" />
+
+                           <TextView
+                               android:id="@+id/orderstatus_4"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:gravity="center"
+                               android:textSize="12sp"
+                               android:text="Order Status: Cancelled"
+                               android:textColor="@color/black"
+                               android:textStyle="bold" />
+
+                       </LinearLayout>-->
+                    <Button
+                        android:id="@+id/tab_4_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55dp"
+
+                        android:background="@drawable/tab4"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:maxLines="2"
+                        android:textSize="12sp"
+                        android:text="DR ID: 15243                    Status: Cancelled" />
+
+                    <Button
+                        android:id="@+id/tab_5_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55dp"
+
+                        android:background="@drawable/tab5"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:maxLines="2"
+                        android:textSize="12sp"
+                        android:text="DR ID: 15244                    Status: Returned"  />
+
+                    <!-- <LinearLayout
+                         android:id="@+id/button_5"
+                         android:layout_width="match_parent"
+                         android:layout_height="55dp"
+                         android:background="@drawable/tab5"
+                         android:layout_marginTop="5dp"
+                         android:layout_marginEnd="2dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginRight="2dp"
+                         android:layout_marginStart="2dp"
+                         android:layout_gravity="center"
+                         android:gravity="center"
+                         android:orientation="vertical">
+
+
+                         <TextView
+                             android:id="@+id/orderid_5"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:gravity="center"
+                             android:text="Order ID: 15244"
+                             android:textColor="@color/black"
+                             android:textSize="12sp"
+                             android:textStyle="bold" />
+
+                         <TextView
+                             android:id="@+id/orderstatus_5"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:gravity="center"
+                             android:textSize="12sp"
+                             android:text="Order Status: Returned"
+                             android:textColor="@color/black"
+                             android:textStyle="bold" />
+
+                     </LinearLayout>-->
+
+
+                    <!-- <LinearLayout
+                         android:id="@+id/button_6"
+                         android:layout_width="match_parent"
+                         android:layout_height="55dp"
+                         android:background="@drawable/tab2"
+                         android:layout_marginTop="5dp"
+                         android:layout_marginEnd="2dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginRight="2dp"
+                         android:layout_marginStart="2dp"
+                         android:layout_gravity="center"
+                         android:gravity="center"
+                         android:orientation="vertical">
+
+
+                         <TextView
+                             android:id="@+id/orderid_6"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:gravity="center"
+                             android:text="Order ID: 15245"
+                             android:textColor="@color/black"
+                             android:textSize="12sp"
+                             android:textStyle="bold" />
+
+                         <TextView
+                             android:id="@+id/orderstatus_6"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:gravity="center"
+                             android:textSize="12sp"
+                             android:text="Order Status: Delivered"
+                             android:textColor="@color/black"
+                             android:textStyle="bold" />
+
+                     </LinearLayout>-->
+                    <Button
+                        android:id="@+id/tab_6_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55dp"
+
+                        android:background="@drawable/tab2"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:maxLines="2"
+                        android:textSize="12sp"
+                        android:text="DR ID: 15245                    Status: Delivered"  />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7" />
+
+    </LinearLayout>
+
+</TabHost>

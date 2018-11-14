@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mersattech.barqexpdriver">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:exported="true"
+        android:theme="@style/AppTheme">
+
+    <activity android:name=".Activities.Login.SplashScreen">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".Activities.Login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Activities.Registration.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:allowTaskReparenting="true"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:supportsPictureInPicture="true"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Activities.Preferences.PreferencesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.History.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Registration.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Login.OtpVerificationScreen"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".DemoPackage.DemoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoPackage.Tab1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoPackage.Tab2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoPackage.Tab3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoPackage.Tab4Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoPackage.Tab5Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DemoPackage.Tab6Activity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".HomePackage.HomePageOneActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activities.Pickoupcheckout.ScanQRnImagescreen"
+            android:screenOrientation="portrait" />
+
+
+    </application>
+
+</manifest>

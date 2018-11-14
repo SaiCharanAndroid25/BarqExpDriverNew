@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_Grey">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/prod_further_details"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            style="@style/scrollview_style"
+            android:layout_below="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_Grey">
+
+                <ImageView
+                    android:id="@+id/item_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:elevation="10dp"
+                    android:src="@drawable/addimage"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_for_photos_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/item_pic"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/pickup_uploaded_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/bg_Grey"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/pickup_uploaded_photos"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_for_delivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/bg_Grey"
+                        android:weightSum="4">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar_p1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:elevation="8dp"
+                                android:indeterminateTint="@color/app_button_color" />
+
+                            <ImageView
+                                android:id="@+id/picked_image1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="4dp"
+                                android:background="@color/layer_bg_Grey"
+                                android:elevation="6dp"
+                                android:fadingEdgeLength="10dp"
+                                android:scaleType="center"
+                                android:src="@drawable/addimage" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar_p2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:elevation="8dp"
+                                android:indeterminateTint="@color/app_button_color" />
+
+                            <ImageView
+                                android:id="@+id/picked_image2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="4dp"
+                                android:background="@color/layer_bg_Grey"
+                                android:elevation="6dp"
+                                android:fadingEdgeLength="10dp"
+                                android:scaleType="center"
+
+                                android:src="@drawable/addimage" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar_p3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:elevation="8dp"
+                                android:indeterminateTint="@color/app_button_color" />
+
+                            <ImageView
+                                android:id="@+id/picked_image3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="4dp"
+                                android:background="@color/layer_bg_Grey"
+                                android:elevation="6dp"
+                                android:fadingEdgeLength="10dp"
+                                android:scaleType="center"
+                                android:src="@drawable/addimage" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar_p4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:elevation="8dp"
+                                android:indeterminateTint="@color/app_button_color" />
+
+                            <ImageView
+                                android:id="@+id/picked_image4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="4dp"
+                                android:background="@color/layer_bg_Grey"
+                                android:elevation="6dp"
+                                android:fadingEdgeLength="10dp"
+                                android:scaleType="center"
+                                android:src="@drawable/addimage" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_for_photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ll_for_photos_delivery"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/add_photo_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/bg_Grey"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/Upload_prod_img"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/prod_img_upload_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/bg_Grey"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:id="@+id/upload_img1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@color/layer_bg_Grey"
+                            android:elevation="6dp"
+                            android:fadingEdgeLength="10dp"
+                            android:scaleType="center"
+                            android:src="@drawable/addimage" />
+
+                        <ImageView
+                            android:id="@+id/upload_img2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@color/layer_bg_Grey"
+                            android:elevation="6dp"
+                            android:fadingEdgeLength="10dp"
+                            android:scaleType="center"
+                            android:src="@drawable/addimage" />
+
+
+                        <ImageView
+                            android:id="@+id/upload_img3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@color/layer_bg_Grey"
+                            android:elevation="6dp"
+                            android:fadingEdgeLength="10dp"
+                            android:scaleType="center"
+                            android:src="@drawable/addimage" />
+
+                        <ImageView
+                            android:id="@+id/upload_img4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@color/layer_bg_Grey"
+                            android:elevation="6dp"
+                            android:fadingEdgeLength="10dp"
+                            android:scaleType="center"
+                            android:src="@drawable/addimage" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/divider_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/ll_for_photos"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/tab_border" />
+
+
+                <LinearLayout
+                    android:id="@+id/llForQRCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_view"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/dark_app_button_color"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/qr_Code_Scan"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/bg_Grey"
+                        android:paddingStart="10dp"
+                        android:text="@string/scan_qr_code"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                    <!-- <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+                         android:id="@+id/id_photo_tv"
+                         android:layout_width="200dp"
+                         android:layout_height="200dp"
+                         android:elevation="6dp"
+                         android:fadingEdgeLength="10dp" />-->
+
+                    <me.dm7.barcodescanner.zxing.ZXingScannerView
+                        android:id="@+id/id_photo_tv"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:layout_margin="5dp"
+                        android:elevation="6dp"
+                        android:fadingEdgeLength="10dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/layer_bg_Grey"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="5dp">
+
+                        <TextView
+                            android:id="@+id/scanned_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/product_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_view"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/dark_app_button_color"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/product_details_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/bg_Grey"
+                        android:paddingStart="10dp"
+                        android:text="@string/product_details"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/scan_grid_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alignmentMode="alignBounds"
+                        android:columnCount="4"
+                        android:columnOrderPreserved="false"
+                        android:useDefaultMargins="true">
+
+                        <TextView
+                            android:layout_gravity="left"
+                            android:text="Item Name         :"
+
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/sender_name"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_column="0"
+                            android:layout_gravity="left"
+                            android:text="Item Weight/Vol :"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/sender_phone"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_column="0"
+                            android:layout_gravity="left"
+                            android:text="Item Volume     :"
+                            android:visibility="gone"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/sender_address"
+                            android:visibility="gone"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_column="0"
+                            android:layout_gravity="left"
+                            android:text="Remarks:"
+                            android:textColor="@android:color/white"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/remarks"
+                            android:textColor="@android:color/white"
+                            android:visibility="gone" />
+
+
+                    </GridLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/upload_button"
+                    style="@style/app_color_button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/product_details"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/app_enable_disable_colors"
+                    android:backgroundTint="@null"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/upload_scannedimageandQR"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</layout>

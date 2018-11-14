@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2b9eb5</color><!--#3F51B5-->
+    <color name="colorPrimaryDark">#2b9eb5</color><!--#303F9F-->
+    <color name="colorAccent">#2b9eb5</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="app_button_color">#000000</color>
+    <color name="stroke_color">#efefef</color>
+    <color name="text_hint_color">#bdb9b9</color>
+    <color name="bg_Grey">#dedada</color>
+    <color name="layer_bg_Grey">#eae8e8</color>
+    <color name="dark_app_button_color">#39424c</color>
+    <color name="tab_border">#a7a7aa</color>
+    <color name="tab_background">#f6f6f7</color>
+    <color name="list_green">#76d114</color>
+    <color name="online_green">#00cc00</color>
+    <color name="delivery_cancel">#f32d31</color>
+    <color name="call_button">#1977a3</color>
+    <color name="transparent1">#10000000</color>
+    <color name="driver_fee">#114B5F</color>
+    <color name="order_id">#2D97AF</color>
+    <color name="cod_commission">#13D409</color>
+    <color name="tab_indicator">#2C96AC</color>
+    <color name="cod_commns">#00ABEB</color>
+
+
+    <color name="yellow">#FFFB33</color>
+    <color name="green">#00cc00</color>
+    <color name="red">#f32d31</color>
+    <color name="orange">#EE851D</color>
+    <color name="purple">#ECB1F0</color>
+
+
+    <color name="blue_300">#64B5F6</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="deep_orange_100">#FFCCBC</color>
+    <color name="deep_orange_500">#FF5722</color>
+    <color name="deep_orange_900">#BF360C</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="red_500">#F44336</color>
+    <color name="teal_100">#B2DFDB</color>
+    <color name="teal_900">#004D40</color>
+
+
+
+</resources>
